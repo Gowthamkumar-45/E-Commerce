@@ -1,0 +1,277 @@
+/* Flipkart Navbar Styles */
+.flipkart-navbar {
+  background-color: #2874f0;
+  color: white;
+  padding: 12px 20px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 800;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.logo-text span {
+  color: #ffe500;
+  font-style: normal;
+}
+
+.logo-text i {
+  font-size: 11px;
+  font-style: normal;
+  color: white;
+  display: block;
+}
+
+.search-bar {
+  flex-grow: 1;
+  max-width: 550px;
+  display: flex;
+  margin: 0 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  font-size: 14px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.search-btn {
+  background: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  color: #2874f0;
+  font-size: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 30px;
+  cursor: pointer;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none; 
+}
+
+.nav-btn i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.nav-category {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 2px;
+  transition: background 0.2s;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-category:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-category i {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 2px;
+  padding: 10px 0;
+  color: #212121;
+}
+
+.dropdown-content a {
+  color: #212121;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f3f6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .nav-bottom {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .search-bar {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-top {
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  .search-bar {
+    order: 3;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  
+  .nav-actions {
+    margin-left: auto;
+  }
+}
+
+/* Original App Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #f7f8fa;
+  color: #222;
+}
+
+.App {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.10);
+  padding: 32px 24px 18px 24px;
+  text-align: center;
+}
+
+.App h1 {
+  font-size: 2.2rem;
+  color: #1976d2;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+nav {
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  padding: 12px 0 10px 0;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin: 0 14px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  background: #1565c0;
+  color: #e3f2fd;
+}
+
+.App h1:last-of-type {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 12px 2px 8px 2px;
+    max-width: 98vw;
+  }
+  
+  nav {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 0;
+  }
+  
+  nav a {
+    margin: 4px 0;
+    padding: 6px 10px;
+  }
+  
+  .App h1 {
+    font-size: 1.3rem;
+  }
+}
